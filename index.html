@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -124,17 +125,17 @@
         <!-- Project 1 -->
         <article class="project-card">
           <div class="project-visual visual-security" aria-hidden="true">
-            <svg viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="24" y="28" width="82" height="84" rx="10" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-opacity="0.35"/>
-              <circle cx="65" cy="62" r="14" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M48 92c4-8 30-8 34 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path class="svg-flow" d="M114 70h42" stroke="currentColor" stroke-width="1.8" stroke-dasharray="4 4"/>
-              <rect x="164" y="22" width="132" height="96" rx="12" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-opacity="0.35"/>
-              <rect x="178" y="38" width="54" height="8" rx="4" fill="currentColor" fill-opacity="0.5"/>
-              <rect x="178" y="56" width="104" height="6" rx="3" fill="currentColor" fill-opacity="0.25"/>
-              <rect x="178" y="70" width="86" height="6" rx="3" fill="currentColor" fill-opacity="0.25"/>
-              <rect x="178" y="88" width="42" height="16" rx="6" fill="currentColor" fill-opacity="0.3"/>
-            </svg>
+            <div class="project-emblems">
+              <div class="emblem-chip" title="Python 3"><i class="devicon-python-plain"></i></div>
+              <div class="emblem-chip" title="Qt / PyQt6"><i class="devicon-qt-original"></i></div>
+              <div class="emblem-chip" title="Raspberry Pi"><i class="devicon-raspberrypi-line"></i></div>
+              <div class="emblem-chip" title="ESP8266 Microcontroller">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+              </div>
+              <div class="emblem-chip" title="Wireshark Packet Analysis">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M5 18c1-7 6-12 12-13-1.5 4.5-1 8.5 1 13"/></svg>
+              </div>
+            </div>
           </div>
           <div class="project-body">
             <div class="project-meta">
@@ -146,11 +147,17 @@
               Prototipe portabel berbasis ESP8266/ESP8285 dan Raspberry Pi dengan aplikasi desktop Python &amp; PyQt6 untuk eksperimen forensik serangan Wi-Fi Deauthentication dan Evil Twin secara otomatis.
             </p>
             <ul class="tech-list">
-              <li>Python 3</li>
-              <li>PyQt6</li>
-              <li>Raspberry Pi</li>
-              <li>ESP8266</li>
-              <li>Wireshark</li>
+              <li><i class="devicon-python-plain"></i><span>Python 3</span></li>
+              <li><i class="devicon-qt-original"></i><span>PyQt6</span></li>
+              <li><i class="devicon-raspberrypi-line"></i><span>Raspberry Pi</span></li>
+              <li>
+                <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+                <span>ESP8266</span>
+              </li>
+              <li>
+                <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M5 18c1-7 6-12 12-13-1.5 4.5-1 8.5 1 13"/></svg>
+                <span>Wireshark</span>
+              </li>
             </ul>
             <div class="project-footer">
               <button class="link-btn" data-project="attracthor">Lihat Detail Arsitektur &rarr;</button>
@@ -161,15 +168,15 @@
         <!-- Project 2 -->
         <article class="project-card">
           <div class="project-visual visual-dashboard" aria-hidden="true">
-            <svg viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="28" y="20" width="264" height="100" rx="12" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-opacity="0.35"/>
-              <rect x="46" y="38" width="64" height="26" rx="6" fill="currentColor" fill-opacity="0.2"/>
-              <rect x="122" y="38" width="64" height="26" rx="6" fill="currentColor" fill-opacity="0.14"/>
-              <rect x="198" y="38" width="76" height="26" rx="6" fill="currentColor" fill-opacity="0.14"/>
-              <path d="M48 102 L92 84 L138 90 L186 74 L232 80 L272 68" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="186" cy="74" r="3.5" fill="currentColor"/>
-              <circle cx="272" cy="68" r="3.5" fill="currentColor"/>
-            </svg>
+            <div class="project-emblems">
+              <div class="emblem-chip" title="HTML5"><i class="devicon-html5-plain"></i></div>
+              <div class="emblem-chip" title="CSS3"><i class="devicon-css3-plain"></i></div>
+              <div class="emblem-chip" title="JavaScript"><i class="devicon-javascript-plain"></i></div>
+              <div class="emblem-chip" title="Google Apps Script"><i class="devicon-google-plain"></i></div>
+              <div class="emblem-chip" title="Google Sheets API">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 9h16M4 15h16M10 9v12"/></svg>
+              </div>
+            </div>
           </div>
           <div class="project-body">
             <div class="project-meta">
@@ -181,9 +188,14 @@
               Sistem pemantauan kas berbasis web yang terintegrasi langsung dengan Google Sheets API dan Google Apps Script untuk mempercepat rekapitulasi administrasi serta transparansi laporan keuangan.
             </p>
             <ul class="tech-list">
-              <li>HTML/CSS/JS</li>
-              <li>Google Apps Script</li>
-              <li>Google Sheets API</li>
+              <li><i class="devicon-html5-plain"></i><span>HTML5</span></li>
+              <li><i class="devicon-css3-plain"></i><span>CSS3</span></li>
+              <li><i class="devicon-javascript-plain"></i><span>JavaScript</span></li>
+              <li><i class="devicon-google-plain"></i><span>Apps Script</span></li>
+              <li>
+                <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 9h16M4 15h16M10 9v12"/></svg>
+                <span>Sheets API</span>
+              </li>
             </ul>
             <div class="project-footer">
               <button class="link-btn" data-project="disnaker">Lihat Detail Arsitektur &rarr;</button>
@@ -194,13 +206,13 @@
         <!-- Project 3 -->
         <article class="project-card">
           <div class="project-visual visual-backend" aria-hidden="true">
-            <svg viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="36" y="26" width="104" height="36" rx="8" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.35"/>
-              <rect x="36" y="78" width="104" height="36" rx="8" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.35"/>
-              <rect x="180" y="52" width="104" height="36" rx="8" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-opacity="0.45"/>
-              <path d="M140 44 H160 V70 H180" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M140 96 H160 V70" stroke="currentColor" stroke-width="1.8"/>
-            </svg>
+            <div class="project-emblems">
+              <div class="emblem-chip" title="Laravel"><i class="devicon-laravel-original"></i></div>
+              <div class="emblem-chip" title="PHP"><i class="devicon-php-plain"></i></div>
+              <div class="emblem-chip" title="MySQL"><i class="devicon-mysql-plain"></i></div>
+              <div class="emblem-chip" title="Git"><i class="devicon-git-plain"></i></div>
+              <div class="emblem-chip" title="GitHub"><i class="devicon-github-original"></i></div>
+            </div>
           </div>
           <div class="project-body">
             <div class="project-meta">
@@ -212,10 +224,11 @@
               Pengembangan modul query Eloquent dan penghitungan inventaris real-time dalam proyek rekayasa perangkat lunak berskala 100+ kontributor dengan alur kerja Git yang terstruktur.
             </p>
             <ul class="tech-list">
-              <li>Laravel</li>
-              <li>PHP</li>
-              <li>MySQL</li>
-              <li>Git/GitHub</li>
+              <li><i class="devicon-laravel-original"></i><span>Laravel</span></li>
+              <li><i class="devicon-php-plain"></i><span>PHP</span></li>
+              <li><i class="devicon-mysql-plain"></i><span>MySQL</span></li>
+              <li><i class="devicon-git-plain"></i><span>Git</span></li>
+              <li><i class="devicon-github-original"></i><span>GitHub</span></li>
             </ul>
             <div class="project-footer">
               <button class="link-btn" data-project="warehouse">Lihat Detail Arsitektur &rarr;</button>
@@ -274,21 +287,88 @@
             <div class="stack-card stack-brown">
               <h3>Web &amp; Automation</h3>
               <div class="pill-wrap">
-                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python 3</span><span>PyQt6</span><span>Laravel</span><span>Google Apps Script</span>
+                <span><i class="devicon-html5-plain"></i> HTML5</span>
+                <span><i class="devicon-css3-plain"></i> CSS3</span>
+                <span><i class="devicon-javascript-plain"></i> JavaScript</span>
+                <span><i class="devicon-python-plain"></i> Python 3</span>
+                <span><i class="devicon-qt-original"></i> PyQt6</span>
+                <span><i class="devicon-laravel-original"></i> Laravel</span>
+                <span><i class="devicon-php-plain"></i> PHP</span>
+                <span><i class="devicon-mysql-plain"></i> MySQL</span>
+                <span><i class="devicon-google-plain"></i> Google Apps Script</span>
               </div>
             </div>
 
             <div class="stack-card stack-green">
-              <h3>Security &amp; Forensics</h3>
+              <h3>Kali Linux Security &amp; Digital Forensics</h3>
               <div class="pill-wrap">
-                <span>Kali Linux</span><span>Wireshark</span><span>Nmap</span><span>Aircrack-ng</span><span>Tcpdump</span><span>Wi-Fi Analysis</span>
+                <span><i class="devicon-kalilinux-plain"></i> Kali Linux</span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M5 18c1-7 6-12 12-13-1.5 4.5-1 8.5 1 13"/></svg>
+                  Wireshark
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg>
+                  Nmap
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                  Aircrack-ng
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/></svg>
+                  Tcpdump
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+                  Autopsy
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M4 7h16M4 17h16"/></svg>
+                  The Sleuth Kit
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+                  Volatility
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>
+                  Binwalk
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h14"/></svg>
+                  Foremost
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg>
+                  ExifTool
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
+                  Hashcat &amp; John
+                </span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M8 12h8M12 8v8"/></svg>
+                  Skipfish
+                </span>
               </div>
             </div>
 
             <div class="stack-card stack-lavender">
-              <h3>Hardware &amp; Tools</h3>
+              <h3>Hardware &amp; Infrastructure</h3>
               <div class="pill-wrap">
-                <span>Raspberry Pi</span><span>ESP8266 / ESP8285</span><span>Git &amp; GitHub</span><span>Linux CLI</span><span>QGIS</span>
+                <span><i class="devicon-raspberrypi-line"></i> Raspberry Pi</span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+                  ESP8266 / ESP8285
+                </span>
+                <span><i class="devicon-linux-plain"></i> Linux CLI</span>
+                <span><i class="devicon-git-plain"></i> Git &amp; GitHub</span>
+                <span><i class="devicon-vscode-plain"></i> VS Code</span>
+                <span>
+                  <svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  QGIS
+                </span>
               </div>
             </div>
           </div>

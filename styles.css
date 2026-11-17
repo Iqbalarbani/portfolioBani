@@ -512,32 +512,45 @@ body {
 }
 
 .project-visual {
-  height: 145px;
+  height: 138px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--border);
-  padding: 0.75rem;
+  padding: 1rem;
   overflow: hidden;
 }
 
-.project-visual svg {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+.project-emblems {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
 }
 
-.project-card:hover .project-visual svg {
-  transform: scale(1.04);
+.emblem-chip {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.85rem;
+  background: var(--bg-card-solid);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 20px -10px rgba(54, 46, 40, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
 }
 
-.svg-flow {
-  animation: dashFlow 2.2s linear infinite;
+.project-card:hover .emblem-chip {
+  transform: translateY(-4px) scale(1.06);
 }
 
-@keyframes dashFlow {
-  to { stroke-dashoffset: -16; }
-}
+.project-card:hover .emblem-chip:nth-child(2) { transition-delay: 0.04s; }
+.project-card:hover .emblem-chip:nth-child(3) { transition-delay: 0.08s; }
+.project-card:hover .emblem-chip:nth-child(4) { transition-delay: 0.12s; }
+.project-card:hover .emblem-chip:nth-child(5) { transition-delay: 0.16s; }
 
 .visual-security {
   color: var(--pastel-brown);
@@ -620,14 +633,39 @@ body {
 }
 
 .tech-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.74rem;
   color: var(--text-muted);
   background: var(--bg-subtle);
   border: 1px solid var(--border);
-  padding: 0.2rem 0.55rem;
-  border-radius: 0.4rem;
-  transition: background-color 0.2s, border-color 0.2s;
+  padding: 0.24rem 0.58rem;
+  border-radius: 0.45rem;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.tech-list li i,
+.pill-wrap span i {
+  font-size: 0.88rem;
+  line-height: 1;
+  color: var(--pastel-brown);
+}
+
+.stack-green .pill-wrap span i,
+.stack-green .pill-wrap span .badge-svg {
+  color: var(--pastel-green);
+}
+
+.stack-lavender .pill-wrap span i,
+.stack-lavender .pill-wrap span .badge-svg {
+  color: var(--pastel-lavender);
+}
+
+.badge-svg {
+  flex-shrink: 0;
+  opacity: 0.9;
 }
 
 .project-card:hover .tech-list li {
@@ -759,12 +797,15 @@ body {
 }
 
 .pill-wrap span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   color: var(--text-muted);
   background: var(--bg-subtle);
   border: 1px solid var(--border);
-  padding: 0.24rem 0.6rem;
+  padding: 0.28rem 0.65rem;
   border-radius: 0.45rem;
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
