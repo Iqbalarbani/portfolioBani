@@ -567,6 +567,78 @@ body {
   background: linear-gradient(135deg, var(--pastel-lavender-bg), var(--pastel-brown-bg));
 }
 
+.visual-game {
+  color: var(--pastel-peach);
+  background: linear-gradient(135deg, var(--pastel-peach-bg), var(--pastel-lavender-bg));
+}
+
+.visual-api {
+  color: var(--pastel-sky);
+  background: linear-gradient(135deg, var(--pastel-sky-bg), var(--pastel-green-bg));
+}
+
+.visual-netsec {
+  color: var(--pastel-green);
+  background: linear-gradient(135deg, var(--pastel-green-bg), var(--pastel-brown-bg));
+}
+
+.visual-data {
+  color: var(--pastel-brown);
+  background: linear-gradient(135deg, var(--pastel-brown-bg), var(--pastel-sky-bg));
+}
+
+.tag-peach {
+  color: var(--pastel-peach);
+  background: var(--pastel-peach-bg);
+}
+
+.tag-sky {
+  color: var(--pastel-sky);
+  background: var(--pastel-sky-bg);
+}
+
+.project-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-bottom: 1.1rem;
+}
+
+.project-highlights li {
+  position: relative;
+  padding-left: 1.05rem;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.project-highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--pastel-green);
+}
+
+.project-highlights strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.project-footer {
+  margin-top: auto;
+}
+
+.btn-sm {
+  padding: 0.6rem 1.1rem;
+  font-size: 0.85rem;
+  border-radius: 0.6rem;
+}
+
 .project-body {
   padding: 1.65rem;
   display: flex;

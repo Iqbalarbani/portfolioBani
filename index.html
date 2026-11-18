@@ -238,6 +238,150 @@
       </div>
     </section>
 
+    <!-- Small Projects & Experiments -->
+    <section id="small-projects" class="section container reveal">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Eksperimen &amp; Project Kecil</span>
+          <h2>Project Lainnya</h2>
+        </div>
+        <p class="section-desc">Kumpulan project kecil, game, dan eksperimen teknis yang saya bangun untuk belajar dan bereksplorasi.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Space Dodger -->
+        <article class="project-card">
+          <div class="project-visual visual-game" aria-hidden="true">
+            <div class="project-emblems">
+              <div class="emblem-chip" title="Python 3"><i class="devicon-python-plain"></i></div>
+              <div class="emblem-chip" title="Pygame">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="3"/><path d="M7 12h2M8 11v2M15 11h.01M17 13h.01"/></svg>
+              </div>
+              <div class="emblem-chip" title="Game Loop">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="tag tag-peach">Game</span>
+              <span class="year">2025</span>
+            </div>
+            <h3>Space Dodger</h3>
+            <p class="project-desc">Game asteroid shooter berbasis Python 3 + Pygame. Kendalikan pesawat, hindari dan tembak asteroid, kumpulkan skor. Semua grafik digambar dengan <code>pygame.draw</code> dan audio disintesis saat runtime tanpa file eksternal.</p>
+            <ul class="project-highlights">
+              <li><strong>Manfaat:</strong> Melatih logika game loop, collision detection, state management (menu, play, pause, game over), dan pemrograman berorientasi objek.</li>
+              <li><strong>Skill:</strong> Python 3, Pygame, OOP, Procedural Audio Synthesis, Game State Management.</li>
+            </ul>
+            <ul class="tech-list">
+              <li><i class="devicon-python-plain"></i><span>Python 3</span></li>
+              <li><svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="10" rx="3"/><path d="M7 12h2M8 11v2M15 11h.01M17 13h.01"/></svg><span>Pygame</span></li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Iqbalarbani/Space-Dodger-game-py" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Buka di GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mini Shop API -->
+        <article class="project-card">
+          <div class="project-visual visual-api" aria-hidden="true">
+            <div class="project-emblems">
+              <div class="emblem-chip" title="Python 3"><i class="devicon-python-plain"></i></div>
+              <div class="emblem-chip" title="PostgreSQL"><i class="devicon-postgresql-plain"></i></div>
+              <div class="emblem-chip" title="Docker"><i class="devicon-docker-plain"></i></div>
+              <div class="emblem-chip" title="REST API"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="2"/></svg></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="tag tag-sky">Backend API</span>
+              <span class="year">2026</span>
+            </div>
+            <h3>Mini Shop API</h3>
+            <p class="project-desc">E-Commerce REST API dengan FastAPI, SQLAlchemy 2.x, Alembic, Pydantic v2, PostgreSQL 16, dan Docker Compose. Arsitektur berlapis Route &rarr; Service &rarr; Repository dengan penanganan race condition stok saat checkout.</p>
+            <ul class="project-highlights">
+              <li><strong>Manfaat:</strong> Menyediakan alur e-commerce inti (auth JWT, katalog, keranjang, checkout aman, order) dengan format error konsisten dan test coverage 85%.</li>
+              <li><strong>Skill:</strong> FastAPI, SQLAlchemy, Alembic, Pydantic, PostgreSQL, JWT, Docker, pytest, ruff, layered architecture.</li>
+            </ul>
+            <ul class="tech-list">
+              <li><i class="devicon-python-plain"></i><span>FastAPI</span></li>
+              <li><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></li>
+              <li><i class="devicon-docker-plain"></i><span>Docker</span></li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Iqbalarbani/API-e-commerce-mini" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Buka di GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- NetPulse -->
+        <article class="project-card">
+          <div class="project-visual visual-netsec" aria-hidden="true">
+            <div class="project-emblems">
+              <div class="emblem-chip" title="Python 3"><i class="devicon-python-plain"></i></div>
+              <div class="emblem-chip" title="Flask"><i class="devicon-flask-original"></i></div>
+              <div class="emblem-chip" title="Scapy / Packet Analysis"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M5 18c1-7 6-12 12-13-1.5 4.5-1 8.5 1 13"/></svg></div>
+              <div class="emblem-chip" title="Chart.js"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="tag tag-green">Network Security</span>
+              <span class="year">2026</span>
+            </div>
+            <h3>NetPulse Network Analyzer</h3>
+            <p class="project-desc">Aplikasi web Flask + Scapy untuk live packet capture dan analisis file PCAP Wireshark, statistik protokol, deteksi anomali (traffic spike, port scanning, SYN flood, ARP storm), serta log aktivitas interaktif.</p>
+            <ul class="project-highlights">
+              <li><strong>Manfaat:</strong> Membantu pemantauan lalu lintas jaringan lokal dan analisis keamanan tanpa membuka Wireshark secara manual.</li>
+              <li><strong>Skill:</strong> Python, Flask, Scapy, BPF Filter, Tailwind CSS, Chart.js, Network Security, Packet Analysis.</li>
+            </ul>
+            <ul class="tech-list">
+              <li><i class="devicon-python-plain"></i><span>Flask</span></li>
+              <li><svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M5 18c1-7 6-12 12-13-1.5 4.5-1 8.5 1 13"/></svg><span>Scapy</span></li>
+              <li><i class="devicon-css3-plain"></i><span>Tailwind</span></li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Iqbalarbani/Network-Packet-Analyzer-Security-Log-Dashboard" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Buka di GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Analisis Data End-to-End -->
+        <article class="project-card">
+          <div class="project-visual visual-data" aria-hidden="true">
+            <div class="project-emblems">
+              <div class="emblem-chip" title="Python 3"><i class="devicon-python-plain"></i></div>
+              <div class="emblem-chip" title="SQL / SQLite"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></div>
+              <div class="emblem-chip" title="Machine Learning"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg></div>
+              <div class="emblem-chip" title="Streamlit Dashboard"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="tag tag-brown">Data Science</span>
+              <span class="year">2026</span>
+            </div>
+            <h3>Analisis Data End-to-End Dashboard</h3>
+            <p class="project-desc">Proyek data analyst end-to-end menganalisis faktor penentu harga rumah Jabodetabek, dengan pipeline cleaning teraudit, analisis SQL (SQLite), model prediksi Random Forest, dan dashboard interaktif Streamlit.</p>
+            <ul class="project-highlights">
+              <li><strong>Manfaat:</strong> Menghasilkan insight bisnis (harga per wilayah, premi SHM, dampak akses tol/stasiun, area best value) untuk pengambil keputusan properti.</li>
+              <li><strong>Skill:</strong> Python, Pandas, SQL/SQLite, Scikit-learn, Random Forest, Streamlit, EDA, Feature Engineering.</li>
+            </ul>
+            <ul class="tech-list">
+              <li><i class="devicon-python-plain"></i><span>Python</span></li>
+              <li><svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/></svg><span>SQLite</span></li>
+              <li><svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg><span>Random Forest</span></li>
+              <li><svg class="badge-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Streamlit</span></li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Iqbalarbani/Analisis-Data-End-to-End-Dashboard" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Buka di GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- Experience & Tech Stack -->
     <section id="experience" class="section container reveal">
       <div class="split-layout">
