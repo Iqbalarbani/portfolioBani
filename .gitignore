@@ -2,3 +2,6 @@
 Thumbs.db
 .vscode/
 *.log
+
+# Repositori lokal hasil clone â€” jangan dipublikasikan
+_repos/
