@@ -1273,3 +1273,82 @@ body {
     display: flex;
   }
 }
+
+@media (max-width: 600px) {
+  /* Hero */
+  .hero {
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  .hero-inner {
+    gap: 1.75rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.9rem, 8vw, 2.5rem);
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+
+  /* Sections & Typography */
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  /* Cards */
+  .bento-card {
+    padding: 1.5rem;
+  }
+
+  .project-body {
+    padding: 1.25rem;
+  }
+
+  .contact-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+  }
+
+  /* Timeline & Grids */
+  .timeline-item {
+    padding-left: 1.25rem;
+  }
+
+  .gallery-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
