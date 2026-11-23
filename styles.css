@@ -1346,9 +1346,82 @@ body {
     padding-left: 1.25rem;
   }
 
+  /* 2 kolom di HP agar tidak terlalu penuh */
+  .gallery-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  /* Sesuaikan isi kartu agar muat di 2 kolom */
+  .project-body {
+    padding: 0.9rem;
+  }
+
+  .project-body h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .project-desc {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .project-meta {
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-meta .tag,
+  .project-meta .year {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .project-highlights {
+    font-size: 0.75rem;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tech-list {
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tech-list li {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .project-visual {
+    height: 90px;
+    padding: 0.5rem;
+  }
+
+  .project-emblems {
+    gap: 0.25rem;
+  }
+
+  .emblem-chip {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+
+  .gallery-item figcaption {
+    font-size: 0.65rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Layar sangat kecil (di bawah 360px) kembali ke 1 kolom */
+@media (max-width: 360px) {
   .gallery-grid,
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
 }
